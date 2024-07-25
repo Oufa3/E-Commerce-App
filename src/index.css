@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row{
+    @apply flex flex-wrap py-8 px-4 items-center
+}
+.btn{
+    @apply px-4 py-2 w-full rounded-lg text-white bg-green-600
+}
+.product .btn{
+    transition: transform 1s , opacity 1s ;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.category-img{
+    height: 200px;
+}
